@@ -1,5 +1,11 @@
 # @sveltejs/kit
 
+## 1.0.0-next.286
+
+### Patch Changes
+
+- Prevent double-fixing of error stack traces in dev mode ([#4041](https://github.com/sveltejs/kit/pull/4041))
+
 ## 1.0.0-next.285
 
 ### Patch Changes
