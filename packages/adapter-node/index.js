@@ -37,7 +37,7 @@ export default function ({
 
 			builder.log.minor('Prerendering static pages');
 			await builder.prerender({
-				dest: `${out}/${builder.base}/prerendered`
+				dest: `${out}/prerendered/${builder.base}`
 			});
 
 			writeFileSync(
