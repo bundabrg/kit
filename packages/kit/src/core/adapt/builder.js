@@ -36,6 +36,7 @@ export function create_builder({ cwd, config, build_data, log }) {
 		copy,
 
 		appDir: config.kit.appDir,
+		base: config.kit.paths.base,
 		trailingSlash: config.kit.trailingSlash,
 
 		createEntries(fn) {

@@ -31,13 +31,13 @@ export default function ({
 			builder.rimraf(out);
 
 			builder.log.minor('Copying assets');
-			builder.writeClient(`${out}/client`);
+			builder.writeClient(`${out}/client/${builder.base}`);
 			builder.writeServer(`${out}/server`);
-			builder.writeStatic(`${out}/static`);
+			builder.writeStatic(`${out}/static/${builder.base}`);
 
 			builder.log.minor('Prerendering static pages');
 			await builder.prerender({
-				dest: `${out}/prerendered`
+				dest: `${out}/${builder.base}/prerendered`
 			});
 
 			writeFileSync(

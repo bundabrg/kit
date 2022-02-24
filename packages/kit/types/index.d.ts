@@ -32,6 +32,7 @@ export interface Builder {
 	mkdirp(dir: string): void;
 
 	appDir: string;
+	base: string;
 	trailingSlash: TrailingSlash;
 
 	/**
